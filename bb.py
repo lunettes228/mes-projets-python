@@ -1,2 +1,4 @@
-while True:
-    print("t'es un fils de pute")
+m=x="*"
+for i in range(0,10):
+    print("    "+m)
+    m=m+"**"
