@@ -32,12 +32,12 @@
 
 
 def demander_nom():
-    nom_full =str("")
-    while nom_full == "":
-        nom_full = input("Quel est votre nom?")
+    nom_complet = str("")
+    while nom_complet == "":
+        nom_complet = input("Quel est votre nom?")
     # else:
     #     print("Entrez un Nom valide!!!!!")
-    return(nom_full)
+    return(nom_complet)
 
 
 nom = demander_nom()
@@ -45,15 +45,17 @@ nom = demander_nom()
 # print("votre nom  est :" + nom2)
 
 # print("vous avez "+age+"ans")
+
+
 def demander_age(age):
     # age = int(input("quel est votre age ? "))
-    if age >= 18 :
+    if age >= 18:
         print("Vous etes majeur!!!")
         print("Vous vous appellez " + nom+" ,Vous avez "+str(age)+" ans")
     elif age == 17:
         print("Vous etes à 1an d'etre majeur!!!")
     else:
         print("Vous n'etes pas majeur!!!")
-demander_age(int(input("quel est votre age?")))
 
-input('Press  to exit') 
+
+demander_age(int(input("quel est votre age?")))

@@ -1,10 +1,29 @@
-from random import random
-import math
-i=0
-
-for i in range(0,10000000000000000000000000000000):
-    # print("32[2;37;40m Underlined text33[0;37;40m n")
-
-    print(str(i+1).zfill(50))
-
-print("bravo vous voiçi à la fin de cette boucle".upper())
+noms = ["samuel", "roger", "naomi", "vitali", "roger", "ahlin", "youssef", "raoul", "ibrahim", "naffi", "ivan", "zaynab", "kola", "emeraude", "appo",
+        "merveille", "victorine", "victoire", "jédéon", "samira", "walter", "essor", "abdou", "josé", "raymond", "staff", "happiness"]
+lenght_noms = len(noms)
+element = input("l'index de quel noms afficher ?")
+element_miniscule = element.lower()
+nombre_de_fois = noms.count(element_miniscule)
+if element_miniscule in noms:
+    index_de_lélément = noms.index(element_miniscule)
+    print(f"l'élément est dans la liste de {lenght_noms}  noms !!!".upper())
+    if nombre_de_fois > 0:
+        for i in range(nombre_de_fois):
+            if nombre_de_fois == 1:
+                print(f"son index est: {index_de_lélément}".capitalize())
+                print(f"il est répété: {nombre_de_fois} fois".capitalize())
+                # break
+            elif nombre_de_fois > 1:
+                print(
+                    f"son premier index est: {index_de_lélément}".capitalize())
+                x = index_de_lélément+1
+                index_de_lélément = noms.index(element_miniscule, x)
+                print(f"il est répété: {nombre_de_fois} fois".capitalize())
+                print(f"son second index est: {index_de_lélément}")
+else:
+    print("le nom saisie n'est pas dans la liste de noms!!!!!".upper())
+    # break
+    # break
+    hur = int(input("quel est le nombre"))
+if hur == 8:
+    print("je suis coupable")
