@@ -12,7 +12,7 @@ if element_miniscule in noms:
             if nombre_de_fois == 1:
                 print(f"son index est: {index_de_lélément}".capitalize())
                 print(f"il est répété: {nombre_de_fois} fois".capitalize())
-                # break
+                break
             elif nombre_de_fois > 1:
                 print(
                     f"son premier index est: {index_de_lélément}".capitalize())
@@ -20,10 +20,8 @@ if element_miniscule in noms:
                 index_de_lélément = noms.index(element_miniscule, x)
                 print(f"il est répété: {nombre_de_fois} fois".capitalize())
                 print(f"son second index est: {index_de_lélément}")
+                break
 else:
     print("le nom saisie n'est pas dans la liste de noms!!!!!".upper())
     # break
     # break
-    hur = int(input("quel est le nombre"))
-if hur == 8:
-    print("je suis coupable")
