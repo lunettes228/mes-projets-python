@@ -1,14 +1,15 @@
-# noms=["samuel", "ahlin", "roger", "rachid", "timal" , "ismael", "rosie", "jacob", "femi", "appo","bertran", "david", "sergio"]
-# noms.sort()
-# print(f"voici la première liste: {noms}".capitalize())
-# position=int(input("à quel position mettre le nouveau nom?"))
-# nouveau_nom=input("quel est le nouveau nom?")
-# noms.insert(position,nouveau_nom)
-# noms.sort()
-# print(f"voici la liste mise à jour: {noms} \n sa longueur est de: {len(noms)}")
-x=int(input("entrez un nombre:  "))
-if  x <= 12 :
-    print(f"bonjour il est {x} heure")
+
+# noms = ["samuel", "roger", "naomi", "v48itali", "roger", "ahlin", "youssef", "rao47ul", "ibrahim", "naffi", "ivan", "zaynab", "kola", "emeraude", "appo",
+#         "merveille", "victo45rine", "victoire", "jédéon", "samira", "walter", "essor", "abdou", "josé55", "raymond", "staff", "happiness"]
+
+# ceci c'est juste pour tester la fonction is digit
+
+k=input("quel est le nom? ")
+y=any([ x.isdigit() for x in k ])
+while y is True:
+    print("la liste contient un élément avec un chiffre")
+    break
 else:
-   print(f"bonsoir il est {x} heure") 
+    print("la liste ne contient pas d'élément avec un chiffre")
     
+# la fonction is digit est maintenant maitrisé
