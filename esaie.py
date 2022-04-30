@@ -35,14 +35,20 @@
 
 #     break
 
-noms = ["samuel", "ahlin", "mike", "roger", "merveille"]
+noms = ["mt5.exe", "ninho arme de point.mp3", "google.com", "santrinos egbé(clip officiel).mp4", "mes notes.txt"]
 
 
-noms_et_age = {"samuel": "18 ans", "ahlin": "28 ans",
-               "mike": "14 ans", "roger": "22 ans", "merveille": "6 ans"}
+noms_et_type_de_fichier = {"exe": "exécutable", "com": "lien(url)",
+               "mp3": "fichier mp3 ", "mp4": "fichier video", "txt": "document text"}
 
-for i in noms:
-    for n in noms_et_age:
-        p = n[i]
-        if p in n:
-            print(f"le nom de la personne est {i} : il a {p} ans")
+for i in noms_et_type_de_fichier:
+    for n in noms:
+        nom_split=n.split(".")
+        m=noms_et_type_de_fichier[i]
+        if nom_split[1] in i:
+            print( n +" est un/une :"+ m.upper())
+            break
+# else:
+#     break
+    # print("c'est un fichier non connue")
+            
