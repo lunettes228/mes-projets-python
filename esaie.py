@@ -46,7 +46,7 @@ for i in noms_et_type_de_fichier:
         nom_split=n.split(".")
         m=noms_et_type_de_fichier[i]
         if nom_split[1] in i:
-            print( n +" est un/une :"+ m.upper())
+            print( n +" est un: "+ m.upper())
             break
 # else:
 #     break
