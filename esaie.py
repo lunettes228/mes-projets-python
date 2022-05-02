@@ -46,9 +46,23 @@ for i in noms_et_type_de_fichier:
         nom_split=n.split(".")
         m=noms_et_type_de_fichier[i]
         if nom_split[1] in i:
-            print( n +" est un: "+ m.upper())
-            break
+            print( n +" est un: "+ m.upper()) 
+            break 
 # else:
 #     break
     # print("c'est un fichier non connue")
-            
+noms_1=["samuel","reine","alice","antoine","nicola","david","maxim"]
+len_noms=[len(nom) for nom in noms_1]
+nom_join="".join(noms_1)
+# x=0
+# for i in noms:
+#     a=len(i)
+#     # len_noms.append(a)
+#     # print(len_noms)
+#     x=a+x
+# print(x) 
+# for i in noms:
+#     len_noms.append(len(i))
+# # print(len_noms)
+# print("le nombre total de caractères de la liste de nom est : ",sum(len_noms))
+print(f"cette liste de noms_1 contient : {len(nom_join)} caractères".upper())           
