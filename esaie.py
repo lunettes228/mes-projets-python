@@ -34,35 +34,46 @@
 #                 break
 
 #     break
+# noms_a_taper=input()
+# noms = ["mt5.exe", "ninho arme de point.mp3", "google.com", "santrinos egbé(clip officiel).mp4", "mes notes.txt"]
 
-noms = ["mt5.exe", "ninho arme de point.mp3", "google.com", "santrinos egbé(clip officiel).mp4", "mes notes.txt"]
 
+# noms_et_type_de_fichier = {"exe": "exécutable", "com": "lien(url)",
+#                "mp3": "fichier mp3 ", "mp4": "fichier video", "txt": "document text"}
 
-noms_et_type_de_fichier = {"exe": "exécutable", "com": "lien(url)",
-               "mp3": "fichier mp3 ", "mp4": "fichier video", "txt": "document text"}
-
-for i in noms_et_type_de_fichier:
-    for n in noms:
-        nom_split=n.split(".")
-        m=noms_et_type_de_fichier[i]
-        if nom_split[1] in i:
-            print( n +" est un: "+ m.upper()) 
-            break 
-# else:
+# for i in noms_et_type_de_fichier:
+#     for n in noms:
+#         nom_split=n.split(".")
+#         m=noms_et_type_de_fichier[i]
+#         if nom_split[1] in i:
+#             print( n +" est un: "+ m.upper())
+#             break
+# # else:
 #     break
-    # print("c'est un fichier non connue")
-noms_1=["samuel","reine","alice","antoine","nicola","david","maxim"]
-len_noms=[len(nom) for nom in noms_1]
-nom_join="".join(noms_1)
+# print("c'est un fichier non connue")
+# noms_1=["samuel","reine","alice","antoine","nicola","david","maxim"]
+# len_noms=[len(nom) for nom in noms_1]
+# nom_join="".join(noms_1)
 # x=0
 # for i in noms:
 #     a=len(i)
 #     # len_noms.append(a)
 #     # print(len_noms)
 #     x=a+x
-# print(x) 
+# print(x)
 # for i in noms:
 #     len_noms.append(len(i))
 # # print(len_noms)
 # print("le nombre total de caractères de la liste de nom est : ",sum(len_noms))
-print(f"cette liste de noms_1 contient : {len(nom_join)} caractères".upper())           
+# print(f"cette liste de noms_1 contient : {len(nom_join)} caractères".upper())
+class garçon:
+    def __init__(self):
+        self.name = input("quele est votre nom :")
+        self.taille = "1m74"
+        self.teint = "clair"
+
+
+garçon = garçon()
+
+print(
+    f"cet humain est de sexe: Maculin\nson nom : {garçon.name}\nsa taille est: {garçon.taille}\nsa peau est  de couleur: {garçon.teint}".title())

@@ -22,6 +22,6 @@ if element_miniscule in noms:
                 print(f"son second index est: {index_de_lélément}")
                 break
 else:
-    print("le nom saisie n'est pas dans la liste de noms!!!!!".upper())
+    print("le nom saisie n'est pas dans la liste de 27 noms!!!!!".upper())
     # break
     # break
