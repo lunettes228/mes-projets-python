@@ -5,7 +5,7 @@ class Personne:
 
     def se_presenter(self):
         if self.nom == "" and self.age != 0:
-            self.nom = input("quel est votre nom")
+            self.nom = input("quel est votre nom ? ")
             print(
                 f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
             self.age_legal()
@@ -31,5 +31,5 @@ class Personne:
 
 personne1 = Personne()
 personne1.se_presenter()
-# personne2=personne("roger",14)
-# personne2.se_presenter()
+personne2=Personne("jeanne",)
+personne2.se_presenter()
