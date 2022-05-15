@@ -1,33 +1,35 @@
-class personne:
-    def __init__(self,nom="",age=0):
-        self.nom=nom
-        self.age=age
+class Personne:
+    def __init__(self, nom=str(""), age=0):
+        self.nom = nom
+        self.age = int(age)
+
     def se_presenter(self):
-        if self.nom !="" and self.age!=0:
-            print(f"vous vous appelez : {self.nom}, vous avez : {self.age} ans".capitalize())
-            self.est_majeur()
-        elif self.nom=="":
-            self.x=input("quel est votre nom ? :")
-            print(f"vous vous appelez : {self.x}, vous avez : {self.age} ans".capitalize())
-            self.est_majeur()
-        elif self.age==0:
-            print(f"vous vous appelez {self.nom}, je ne connais pas votre age!!!")
+        if self.nom == "" and self.age != 0:
+            self.nom = input("quel est votre nom")
+            print(
+                f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+            self.age_legal()
+        elif self.nom != "" and self.age != 0:
+            print(
+                f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+            self.age_legal()
+        elif self.nom != "" and self.age == 0:
+            print(
+                f"votre nom est: {self.nom} , je ne connais pas votre age".capitalize())
         else:
-             print(f"vous vous appelez {self.x}, je ne connais pas votre age!!!")
-    def est_majeur(self):
-        if self.age>=18:
-            print(f"{self.nom} vous etes majeur !!!!".capitalize())
-            # return True
-        elif self.nom=="" and self.age>=18:
-            print(f"{self.x} vous etes majeur !!!!".capitalize())
-        elif self.nom=="" and self.age<18:
-            print(f"{self.x} vous etes mineur !!!!".capitalize())
+            self.nom = input("quel est votre nom ? ")
+            self.age = int(input("quel est votre age ? "))
+            print(
+                f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+            self.age_legal()
+    def age_legal(self):
+        if self.age >= 18:
+            print(f"{self.nom}, vous etes majeur".capitalize())
         else:
-            print(f"{self.nom} vous etes mineur !!!!".capitalize())
-            # return False
-            
-        
-personne1=personne()
-personne2=personne()
+            print(f"{self.nom}, vous etes mineur".capitalize())
+
+
+personne1 = Personne()
 personne1.se_presenter()
-personne2.se_presenter()
+# personne2=personne("roger",14)
+# personne2.se_presenter()
