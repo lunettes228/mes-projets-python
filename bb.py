@@ -2,15 +2,14 @@ class Personne:
     def __init__(self, nom=str(""), age=0):
         self.nom = nom
         self.age = int(age)
+
     def se_presenter(self):
-        if self.nom == "" and self.age != 0: 
+        if self.nom == "" and self.age != 0:
             self.demander_nom()
-            print(
-                f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+            self.afficher_nom_et_age()
             self.age_legal()
         elif self.nom != "" and self.age != 0:
-            print(
-                f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+            self.afficher_nom_et_age()
             self.age_legal()
         elif self.nom != "" and self.age == 0:
             print(
@@ -18,21 +17,27 @@ class Personne:
         else:
             self.demander_nom()
             self.demander_age()
-            print(
-                f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+            self.afficher_nom_et_age()
             self.age_legal()
+
+    def afficher_nom_et_age(self):
+        print(
+            f"mon nom est: {self.nom} , j'ai {self.age} ans".capitalize())
+
     def demander_nom(self):
-        self.nom=input("quel est votre nom? ")
+        self.nom = input("quel est votre nom? ")
+
     def demander_age(self):
-        self.age=int(input("quel est votre age ? "))
-        
+        self.age = int(input("quel est votre age ? "))
+
     def age_legal(self):
         if self.age >= 18:
             print(f"{self.nom}, vous etes majeur".capitalize())
         else:
             print(f"{self.nom}, vous etes mineur".capitalize())
-                                   
+
+
 personne1 = Personne()
 personne1.se_presenter()
-personne2=Personne("jeanne",)
+personne2 = Personne("jeanne",)
 personne2.se_presenter()
