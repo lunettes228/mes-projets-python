@@ -21,7 +21,7 @@ class Pizza:
             self.prix=int(self.prix)
         except:
             print("valeur de prix incorrect entrez un chiffre")
-        pass
+        return
     def demander_ingredients(self):
         m=int(input("Combien d'ingrédients vous voulez mettre:  "))
         x=1
