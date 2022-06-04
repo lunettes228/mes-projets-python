@@ -9,9 +9,9 @@ class Pizza:
             self.demander_prix()
             self.verifier_le_format_du_prix()
             self.demander_ingredients()
-            print(f"Le nom de ce pizza est : {self.nom}" + f"\nson prix : {self.prix} $".title() + f"\nses ingredients sont: ".title() +", ".join(self.ingredients).title())
+            print(f"Le nom de ce pizza est : {self.nom}" + f"\nSon prix : {self.prix} $".title() + f"\nSes ingredients sont: ".title() +", ".join(self.ingredients).title())
         else:
-            print(f"Le nom de ce pizza est : {self.nom}" + f"\nson prix : {self.prix} $".title() + f"\nses ingredients sont: ".title() +", ".join(self.ingredients).title())
+            print(f"Le nom de ce pizza est : {self.nom}" + f"\nSon prix : {self.prix} $".title() + f"\nSes ingredients sont: ".title() +", ".join(self.ingredients).title())
     def demander_nom(self):
         self.nom=input("Quel est le nom de votre pizza:  ")
     def demander_prix(self):
@@ -20,8 +20,8 @@ class Pizza:
         try:
             self.prix=int(self.prix)
         except:
-            print("valeur de prix incorrect entrez un chiffre")
-        return
+            print("Valeur de prix incorrect entrez un chiffre !!!!")
+            quit()
     def demander_ingredients(self):
         m=int(input("Combien d'ingrédients vous voulez mettre:  "))
         x=1
