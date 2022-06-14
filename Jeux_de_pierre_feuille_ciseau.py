@@ -17,7 +17,7 @@ for i in range(point):
     print("                          *                                   ")
     print("                          *                                   ")
     print("                          *                                   ")
-    if choix_de_liste == "pierre":
+    if choix_de_liste == choix[0]:
         r = input("votre choix: ")
         if r == "feuille":
             print(f"Le choix de l'ordi est :{choix_de_liste}")
@@ -35,7 +35,7 @@ for i in range(point):
             print(f"votre choix est :{r}")
             score += 0
             print(f"Personne n'a gagné !!!\nvotre score: {score}")
-    elif choix_de_liste == "feuille":
+    elif choix_de_liste == choix[1]:
         r = input("votre choix: ")
 
         if r == "ciseau":
@@ -55,7 +55,7 @@ for i in range(point):
             score += 0
             print(f"Personne n'a gagné !!!\nvotre score: {score}")
 
-    elif choix_de_liste == "ciseau":
+    elif choix_de_liste == choix[2]:
         r = input("votre choix: ")
 
         if r == "pierre":
