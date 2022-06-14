@@ -9,7 +9,7 @@ for l in solution:
   affichage = affichage + "_ "
 print(">> Bienvenue dans le pendu <<")
 while tentatives > 0:
-  print("\nMot à deviner : ", affichage)
+  print(f"\nMot à deviner: {len(solution)} caractères : ", affichage)
   proposition = input("proposez une lettre : ").lower()
 
   if proposition in solution:
