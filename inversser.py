@@ -12,7 +12,7 @@ x="Aujourd'hui il ne fait pas beau mais bon j'ai envie d'un bon c"
 
 def afficher_mot_min_et_mot_max(x):
     y=x.split()
-    print("le mot le plus court est : ",min(y, key=len))
-    print("le mot le plus long est : ",max(y, key=len))
+    f=print("le mot le plus court est : ",min(y, key=len), "\nle mot le plus long est : ",max(y, key=len))
+    return(f)
     
 afficher_mot_min_et_mot_max(x)
