@@ -8,11 +8,23 @@
 # print(f"le mot le plus long est: ",max(x,key=len))
 # print(f"le mot le plus court est: ",min(x,key=len))
 
-x="Aujourd'hui il ne fait pas beau mais bon j'ai envie d'un bon c"
+x="Aujourd'hui il ne fait pas beau mais bon j'ai envie d'un bon cul, mais je me vois pas dans ça!!!!"
 
 def afficher_mot_min_et_mot_max(x):
     y=x.split()
     f=print("le mot le plus court est : ",min(y, key=len), "\nle mot le plus long est : ",max(y, key=len))
     return(f)
     
+
+def afficher_mot_min_et_mot_max_par_ordre(x):
+    y=x.split()
+    f=[min(y, key=len),max(y, key=len)]
+    f.sort()
+    c=tuple(f)
+    print(c)
+
 afficher_mot_min_et_mot_max(x)
+
+afficher_mot_min_et_mot_max_par_ordre(x)
+
+
