@@ -8,7 +8,7 @@
 # print(f"le mot le plus long est: ",max(x,key=len))
 # print(f"le mot le plus court est: ",min(x,key=len))
 
-x="Aujourd'hui il ne fait pas beau mais bon j'ai envie d'un bon cul, mais je me vois pas dans ça!!!!"
+x=input("Ecrivez votre phrase: ")
 
 def afficher_mot_min_et_mot_max(x):
     y=x.split()
